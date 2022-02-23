@@ -27,16 +27,6 @@ public class testMemento{
         String actual = originator.getState();
         String expected = "state #1";
 
-
         Assert.assertEquals(expected,actual);
     }
 }
-
-
-
-
-
-
-
-
-
