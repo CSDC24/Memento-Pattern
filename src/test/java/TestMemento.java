@@ -1,7 +1,7 @@
-import org.junit.Assert;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.Test;
 
-public class testMemento{
+public class TestMemento {
     Originator originator = new Originator();
     CareTaker careTaker = new CareTaker();
     @Test
@@ -14,7 +14,7 @@ public class testMemento{
         String expected = "state #2";
         String actual = originator.getState();
 
-        Assert.assertEquals(expected,actual);
+        assertEquals(expected,actual);
     }
     @Test
     public  void testMemento_Scenario_GetFirstState(){
@@ -27,16 +27,6 @@ public class testMemento{
         String actual = originator.getState();
         String expected = "state #1";
 
-
-        Assert.assertEquals(expected,actual);
+        assertEquals(expected,actual);
     }
 }
-
-
-
-
-
-
-
-
-
